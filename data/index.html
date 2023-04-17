@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termostat konfigurácia</title>
+    <link rel="stylesheet" href="src/css/form.css">
+</head>
+
+<body class="gradient-bg" style="--color-1: #415eff; --color-2: #fa5454;">
+    <div class="content-container">
+        <div class="form-container">
+            <form action="/sendVariables">
+                <div class="form-heading">
+                    Konfigurácia termostatu
+                </div>
+                <div class="input-heading">Wi-Fi</div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input placeholder="Názov" id="ssid" name="ssid" type="text" required>
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Heslo" id="wifiPassword" name="wifiPassword" type="password" required>
+                    </div>
+                </div>
+                <div class="input-heading">MQTT</div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input placeholder="IP" id="mqttIP" name="mqttIP" type="text"
+                            pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?).){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$">
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Port" id="port" name="port" type="number">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <input placeholder="Client" id="client" name="client" type="text">
+                    </div>
+                    <div class="input-group">
+                        <input placeholder="Heslo" id="mqttPassword" name="mqttPassword" type="password">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">
+                        Odoslať
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Ladislav Stefun 2022 | KOP
+    </footer>
+</body>
+
+</html>
