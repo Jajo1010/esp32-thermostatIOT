@@ -22,7 +22,7 @@ public:
 
   String getWifiSsid();
   String getWifiPassword();
-  String getMqttIP();
+  IPAddress getMqttIP();
   String getMqttClient();
   String getMqttPassword();
   String getmacAdress();

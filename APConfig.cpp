@@ -17,11 +17,6 @@ public:
   }
 };
 
-IPAddress stringToIp(const char* ipString) {
-  IPAddress ip;
-  ip.fromString(ipString);
-  return ip;
-}
 
 APConfig::APConfig() {
   preferences.begin("config", false);
@@ -42,61 +37,33 @@ APConfig::APConfig() {
 }
 
 String APConfig::getWifiSsid() {
-  preferences.begin("config", false);
-  wifiSsid = preferences.getString("wifiSsid", "");
-  preferences.end();
   return wifiSsid;
 }
 
 String APConfig::getWifiPassword() {
-  preferences.begin("config", false);
-  wifiPassword = preferences.getString("wifiPassword", "");
-  preferences.end();
-
   return wifiPassword;
 }
-String APConfig::getMqttIP() {
-  preferences.begin("config", false);
-  mqttIP = preferences.getString("mqttIP", "");
 
-  preferences.end();
-
-  return mqttIP;
+IPAddress APConfig::getMqttIP() {
+  IPAddress ip;
+  ip.fromString(mqttIP);
+  return ip;
 }
 
 int APConfig::getMqttPort() {
-  preferences.begin("config", false);
-  mqttPort = preferences.getString("mqttPort", "");
-
-  preferences.end();
-
   return mqttPort.toInt();
 }
 
 String APConfig::getMqttClient() {
-  preferences.begin("config", false);
-  mqttClient = preferences.getString("mqttClient", "");
-
-  preferences.end();
-
   return mqttClient;
 }
 
 String APConfig::getMqttPassword() {
-  preferences.begin("config", false);
-  mqttPassword = preferences.getString("mqttPassword", "");
-
-  preferences.end();
-
   return mqttPassword;
 }
 
 
 bool APConfig::getSetup() {
-  preferences.begin("config", false);
-  setup = preferences.getBool("setup", "true");
-  preferences.end();
-
   return setup;
 }
 
@@ -142,6 +109,7 @@ void APConfig::writeFactoryDefaults() {
 
   preferences.putString("mqttIP", "");
   preferences.putString("mqttClient", "");
+  preferences.putString("mqttPassword","");
   preferences.putString("mqttPort", "");
   preferences.putString("wifiPassword", "");
 
@@ -260,8 +228,8 @@ void APConfig::setupServer() {
       writeDefaults();
     }
 
-    if (request->hasParam("mqttPasword")) {
-      inputMessage = request->getParam("mqttPasword")->value();
+    if (request->hasParam("mqttPassword")) {
+      inputMessage = request->getParam("mqttPassword")->value();
       mqttPassword = inputMessage;
       Serial.println(inputMessage);
       writeDefaults();

@@ -1,0 +1,837 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\variants\\esp32s3"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "TelnetStream.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\TelnetStream\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "WiFi.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "Preferences.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Preferences\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "DNSServer.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\DNSServer\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "AsyncTCP.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\AsyncTCP-master\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "ESPAsyncWebServer.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "FS.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\FS\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "SPIFFS.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\SPIFFS\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "U8g2lib.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "OneWire.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\OneWire"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "DallasTemperature.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\DallasTemperature"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "NonBlockingDallas.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\NonBlockingDallas-master"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "CircularBuffer.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\CircularBuffer"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "PubSubClient.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\PubSubClient\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "AsyncElegantOTA.h",
+    "Includepath": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\AsyncElegantOTA\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "Update.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Update\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\KOP_Termostat.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\APConfig.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\KOP_Termostat\\build\\sketch\\Button.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\TelnetStream\\src\\TelnetPrint.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\TelnetStream\\src\\TelnetStream.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFi.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiAP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiGeneric.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiMulti.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiSTA.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiScan.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\WiFi\\src\\WiFiUdp.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Preferences\\src\\Preferences.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\DNSServer\\src\\DNSServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\AsyncTCP-master\\src\\AsyncTCP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\AsyncEventSource.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\AsyncWebSocket.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\SPIFFSEditor.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\WebAuthentication.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\WebHandlers.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\WebRequest.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\WebResponses.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\ESPAsyncWebServer-master\\src\\WebServer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\FS\\src\\FS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\FS\\src\\vfs_api.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\SPIFFS\\src\\SPIFFS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\U8g2lib.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\U8x8lib.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\U8x8lib.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\mui.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\mui_u8g2.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_bitmap.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_box.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_buffer.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_button.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_circle.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_cleardisplay.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_d_memory.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_d_setup.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_font.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_fonts.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_hvline.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_input_value.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_intersection.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_kerning.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_line.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_ll_hvline.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_message.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_polygon.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_selection_list.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8g2_setup.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8log.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8log_u8g2.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8log_u8x8.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_8x8.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_byte.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_cad.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_capture.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_a2printer.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_gu800.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_hd44102.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_il3820_296x128.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ist3020.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ist7920.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ks0108.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_lc7981.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ld7032_60x32.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ls013b7dh03.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_max7219.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_pcd8544_84x48.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_pcf8812.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_pcf8814_hx1230.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_s1d15721.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_s1d15e06.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sbn1661.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sed1330.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sh1106_64x32.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sh1106_72x40.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sh1107.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sh1108.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_sh1122.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1305.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_128x32.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_128x64_noname.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_2040x16.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_48x64.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_64x32.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_64x48.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_72x40.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_96x16.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1306_96x40.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1309.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1316.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1317.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1318.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1320.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1322.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1325.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1326.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1327.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1329.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1606_172x72.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_ssd1607_200x200.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7511.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st75160.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st75256.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7528.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st75320.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7565.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7567.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7571.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7586s_erc240160.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7586s_s028hn118a.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7586s_ymc240160.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7588.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_st7920.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_t6963.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1601.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1604.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1608.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1609.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1610.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1611.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1617.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1638.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1701_dogs102.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_d_uc1701_mini12864.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_debounce.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_display.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_fonts.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_gpio.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_input_value.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_message.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_selection_list.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_setup.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_string.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_u16toa.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\U8g2\\src\\clib\\u8x8_u8toa.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\OneWire\\OneWire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\DallasTemperature\\DallasTemperature.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\NonBlockingDallas-master\\NonBlockingDallas.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\Documents\\Arduino\\libraries\\PubSubClient\\src\\PubSubClient.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Update\\src\\HttpsOTAUpdate.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\Update\\src\\Updater.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jajo\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\2.0.7\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
