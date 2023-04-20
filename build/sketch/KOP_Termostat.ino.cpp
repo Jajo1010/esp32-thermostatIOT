@@ -85,10 +85,10 @@ bool isConnected = false;
 bool wasHeatingOn = false;
 
 //MQTT PART
-const char* mqttServer = "192.168.0.19";
+const char* mqttServer;
 int mqttPort = 1883;
-const char* clientId = "onyx_mqtt";
-const char* clientPass = "homeaS$21_emkjutiti";
+const char* clientId;
+const char* clientPass;
 WiFiClient espClient;
 PubSubClient client(espClient);
 long lastMsg = 0;
@@ -544,7 +544,7 @@ void returnToMainMenu() {
 void nonBlockingReconnect() {
   if (millis() - lastReconnectAttempt > reconnectInterval) {
     lastReconnectAttempt = millis();
-    if (client.connect("ESP32Thermostat", clientId, clientPass)) {
+    if (client.connect("ESP32Thermostat", apConfig.getMqttClient().c_str(), apConfig.getMqttPassword().c_str())) {
       TelnetStream.println("Connected to MQTT server");
       //Publish Topics
       // const char* getTemperatureStatTopic = "stat/thermostat/temperature";
@@ -565,11 +565,12 @@ void nonBlockingReconnect() {
       clientId = apConfig.getMqttClient().c_str();      
       clientPass = apConfig.getMqttPassword().c_str();
       */
-      TelnetStream.print("failed, rc=");
+      TelnetStream.println("failed, rc=");
+      TelnetStream.println(apConfig.getMqttClient().c_str());
+      TelnetStream.println(apConfig.getMqttPassword().c_str());
+      //TelnetStream.println(apConfig.getMqttIP().c_str());
       TelnetStream.println(apConfig.getMqttIP());
-      TelnetStream.println(apConfig.getMqttPort());
-      TelnetStream.println(apConfig.getMqttClient());
-      TelnetStream.println(apConfig.getMqttPassword());
+      TelnetStream.println("192.168.0.19");
     }
   }
 }
@@ -672,20 +673,21 @@ void setup() {
       isConnected = true;
       //Code upload
 
-      mqttServer = apConfig.getMqttIP().c_str();
-      mqttPort = apConfig.getMqttPort();
-      clientId = apConfig.getMqttClient().c_str();      
-      clientPass = apConfig.getMqttPassword().c_str();
 
       AsyncElegantOTA.begin(&server);  // Start ElegantOTA
       server.begin();
 
-      client.setServer(mqttServer, 1883);
-      client.setCallback(mqttCallback);
+      
 
       //Debugging
       TelnetStream.begin();
       TelnetStream.println("");
+      TelnetStream.println(apConfig.getMqttClient().c_str());
+      TelnetStream.println(apConfig.getMqttPassword().c_str());
+      //TelnetStream.println(apConfig.getMqttIP().c_str());
+
+      client.setServer(apConfig.getMqttIP(), apConfig.getMqttPort);
+      client.setCallback(mqttCallback);
     } else {
       apConfig.writeFactoryDefaults();
       isConnected = false;
