@@ -84,7 +84,7 @@ bool wasHeatingOn = false;
 
 //MQTT PART
 const char* mqttServer;
-int mqttPort = 1883;
+int mqttPort;
 const char* clientId;
 const char* clientPass;
 WiFiClient espClient;
@@ -120,8 +120,8 @@ const int radiatorIconY = 0;           // y-coordinate of the WiFi icon
 //Display text positions
 const int setTemperatureX = W / 2 - 20;
 const int setTemperatureY = 12;
-const int currentTemperatureX = W / 2 - 65;
-const int currentTemperatureY = H / 2 + 20;
+const int currentTemperatureX = W / 2 - 75;
+const int currentTemperatureY = H / 2 + 15;
 
 //Display temp variables
 float displayCurrentTemperature;
@@ -202,9 +202,9 @@ void drawtargetTemperature(int x, int y, float value) {
 }
 
 void drawtargetTemperatureChange(float value) {
-  String temperatureString = formatTemperature(value) + "C";
+  String temperatureString = formatTemperature(value);
   u8g2.setFont(u8g2_font_inb21_mf);
-  u8g2.drawStr(W / 2 - 50, H / 2 + 10, formatTemperature(value).c_str());
+  u8g2.drawStr(W / 2 - 70, H / 2 + 10, formatTemperature(value).c_str());
   u8g2.sendBuffer();
 }
 
@@ -307,7 +307,7 @@ String formatTemperature(float temperature) {
   }
   String temperatureString = String(temperature, 1);  // 1 decimal place and °C symbol
   while (temperatureString.length() < 5) {
-    temperatureString = " " + temperatureString + "C";  // add leading spaces
+    temperatureString = " " + temperatureString +"\xb0"+"C";  // add leading spaces and the degree symbol
   }
   return temperatureString;
 }
@@ -321,7 +321,7 @@ void handleIntervalElapsed(float temperature, bool valid, int deviceIndex) {
 
 float filterTemperature(float temperature) {
   int validReadings = 0;
-  if (temperature != abs(127)) {
+  if (abs(temperature) != 127) {
     buffer.push(temperature);
   }
   for (byte i = 0; i < buffer.size() - 1; i++) {
@@ -338,6 +338,8 @@ float filterTemperature(float temperature) {
 }
 
 void updateMainScreen(int wifiState, float temperature, float targetTemperature, bool heatingState) {
+  static bool nextHeatingState = heatingState;  // introduce new variable to store the next value of heatingState
+
   if (wifiState != displayWiFiState) {
     drawWifiIcon(wifiIconX, wifiIconY, wifiState);
     displayWiFiState = wifiState;
@@ -353,16 +355,17 @@ void updateMainScreen(int wifiState, float temperature, float targetTemperature,
     displaySetTemperature = targetTemperature;
   }
 
-  if (heatingState != displayHeatingState) {
+  if (heatingState != nextHeatingState) {  // compare with nextHeatingState instead of heatingState
     drawRadiatorIcon(radiatorIconX, radiatorIconY, heatingState);
     displayHeatingState = heatingState;
+    nextHeatingState = heatingState;  // update nextHeatingState to match heatingState
+    u8g2.sendBuffer();
   }
 
   if (wifiState != displayWiFiState || temperature != displayCurrentTemperature || targetTemperature != displaySetTemperature || heatingState != displayHeatingState) {
     u8g2.sendBuffer();
   }
 }
-
 void updateSetTemperatureScreen(float targetTemperature) {
   if (targetTemperature != displaySetTemperature) {
     u8g2.clearBuffer();
@@ -374,12 +377,8 @@ void updateSetTemperatureScreen(float targetTemperature) {
 
 void updateDrawSettings(int oldMenuPos, int newMenuPos) {
   if (oldMenuPos != newMenuPos) {
-    TelnetStream.print("Old menu ");
-    TelnetStream.println(oldMenuPos);
     drawSettings(newMenuPos);
     previousMenuPos = newMenuPos;
-    TelnetStream.print("updatedMenu ");
-    TelnetStream.println(newMenuPos);
   }
 }
 
@@ -395,6 +394,9 @@ void changeMenu(int mode) {
     case SETTINGS:
       drawSettings(menuPos);
       break;
+    case SHOW_IP_SCREEN:
+      drawInfo();
+      break;
   }
 }
 
@@ -409,14 +411,15 @@ void updateMenuValues(int mode) {
     case SETTINGS:
       updateDrawSettings(previousMenuPos, menuPos);
       break;
+
   }
 }
 
 void doActionForSetting(int settingOption) {
   switch (settingOption) {
     case SHOW_IP:
-      menuPos = SHOW_IP_SCREEN;
-      drawInfo();
+      menuScreen = SHOW_IP_SCREEN;
+      settingOption = SHOW_IP_SCREEN;
       break;
     case FACTORY_RESET:
       factoryReset();
@@ -656,6 +659,7 @@ void setup() {
   sensorDs18b20.update();
 
   u8g2.begin();
+  u8g2.enableUTF8Print();
   drawMainMenu();
 
 
@@ -675,8 +679,6 @@ void setup() {
       AsyncElegantOTA.begin(&server);  // Start ElegantOTA
       server.begin();
 
-      
-
       //Debugging
       TelnetStream.begin();
       TelnetStream.println("");
@@ -684,7 +686,7 @@ void setup() {
       TelnetStream.println(apConfig.getMqttPassword().c_str());
       //TelnetStream.println(apConfig.getMqttIP().c_str());
 
-      client.setServer(apConfig.getMqttIP(), apConfig.getMqttPort);
+      client.setServer(apConfig.getMqttIP(), apConfig.getMqttPort());
       client.setCallback(mqttCallback);
     } else {
       apConfig.writeFactoryDefaults();

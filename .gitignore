@@ -1,0 +1,5 @@
+# Ignore Git internal files
+.git/
+
+# Ignore Visual Studio Code settings
+.vscode/
