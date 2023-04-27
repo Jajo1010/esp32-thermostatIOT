@@ -32,7 +32,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 
@@ -44,7 +43,7 @@
 </br>
 
 <p align="center">
-  <img src="https://i.imgur.com/iQ1g3a2.png" alt="Logo" width="677" height="625" >
+  <img src="https://i.imgur.com/iQ1g3a2.png" alt="Logo" width="377" height="325" >
 </p>
 
 Students highschool gradution project using modern ways to control IOT devices. MCU chosen in this project is ESP32-S3 and Dallas temperature sensors Ds18b2.The device is connected to homebridge using MQTT, homebridge then distributes this device to all kinds of home automation platforms such as :
