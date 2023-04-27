@@ -46,6 +46,12 @@
   <img src="https://i.imgur.com/iQ1g3a2.png" alt="Logo" width="377" height="325" >
 </p>
 
+<p align="center">
+  <img src="https://i.imgur.com/1nAH8AR.png" alt="Logo" width="338" height="600" >
+</p>
+
+
+
 Students highschool gradution project using modern ways to control IOT devices. MCU chosen in this project is ESP32-S3 and Dallas temperature sensors Ds18b2.The device is connected to homebridge using MQTT, homebridge then distributes this device to all kinds of home automation platforms such as :
 * [Homekit](https://www.apple.com/home-app/accessories/) (mainly focused on)
 * [Google Home](https://home.google.com/welcome/)  
