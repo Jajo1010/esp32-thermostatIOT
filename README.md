@@ -168,7 +168,7 @@ To get a local copy up and running follow these simple example steps.
   <li>Select <em>Sketch -> Export Compiled library</em></li>
   <li>Select <em>Sketch -> Show Sketched Folder</em></li>
   <li>Find your ESP32S3s IP adress on local Network (for example <a href="https://www.advanced-ip-scanner.com/">Advanced IP Scanner</a>)</li>
-  <li>Go to http:ESP32IPADRESS/update and upload the binary from exported binary path <strong><em>step 7</em></strong></li>
+  <li>Go to http:ESP32IPADRESS/update and upload the binary from exported binary path <strong><em>step 8</em></strong></li>
   <li>Connect on ESP32 Access point and configure the device</li>
 </ol>
 
